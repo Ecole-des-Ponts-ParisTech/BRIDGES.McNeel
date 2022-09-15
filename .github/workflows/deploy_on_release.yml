@@ -1,0 +1,16 @@
+# This worklow start when a GitHub Release is created
+name : Deploy on Release
+
+# Controls the event triggering the workflow
+on :
+  release :
+    types : [created]
+
+jobs :
+
+  deploy-nuget-workflow :
+    uses : Ecole-des-Ponts-ParisTech/BRIDGES.McNeel/.github/workflows/deploy_nuget.yml@master
+
+  deploy-pages-workflow :
+    needs: deploy-nuget-workflow
+    uses : Ecole-des-Ponts-ParisTech/BRIDGES.McNeel/.github/workflows/deploy_docfx_pages.yml@master
