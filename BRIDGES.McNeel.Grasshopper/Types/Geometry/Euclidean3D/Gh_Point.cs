@@ -13,7 +13,7 @@ using GH_Kernel = Grasshopper.Kernel;
 using GH_Types = Grasshopper.Kernel.Types;
 
 
-namespace ENPC.McNeel.Grasshopper.Types.Geometry.Euclidean3D
+namespace BRIDGES.McNeel.Grasshopper.Types.Geometry.Euclidean3D
 {
     /// <summary>
     /// Class defining a grasshopper type for an <see cref="Euc3D.Point"/> .
