@@ -1,0 +1,242 @@
+{
+  "homepages": [],
+  "source_base_path": "/home/runner/work/BRIDGES.McNeel/BRIDGES.McNeel",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "Q5FY2q/zSIA9hFtgGQk1XqJOJSimHq2WUiI7SUhKcQo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BRIDGES.McNeel.RhinoCommon.Conversion.Geometry.Euclidean3D.Point.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BRIDGES.McNeel.RhinoCommon.Conversion.Geometry.Euclidean3D.Point.html",
+          "hash": "c/kTmmRbNdEfPbJVfGhNC/z+TS5TA3Kcf2uhClkV//Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BRIDGES.McNeel.RhinoCommon.Conversion.Geometry.Euclidean3D.Polyline.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BRIDGES.McNeel.RhinoCommon.Conversion.Geometry.Euclidean3D.Polyline.html",
+          "hash": "tOUfBKrh8T1KCTt57qFf9UHSAYokWVZSLFiDT7UGeRs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BRIDGES.McNeel.RhinoCommon.Conversion.Geometry.Euclidean3D.Vector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BRIDGES.McNeel.RhinoCommon.Conversion.Geometry.Euclidean3D.Vector.html",
+          "hash": "B/Lyso7EeOUdiW3la/m8MKupL2T3/8YUUxxVeycW5k8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BRIDGES.McNeel.RhinoCommon.Conversion.Geometry.Euclidean3D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BRIDGES.McNeel.RhinoCommon.Conversion.Geometry.Euclidean3D.html",
+          "hash": "xQTWAGxwaecASoO4vphLhMZ//msfKw5rbvmIxPTQ3OI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ENPC.McNeel.Grasshopper.Types.Geometry.Euclidean3D.Gh_Point.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ENPC.McNeel.Grasshopper.Types.Geometry.Euclidean3D.Gh_Point.html",
+          "hash": "ltp7Hm1sZjdBIKXYFosjqJf4ic4noCPNF2UDVmd0byo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ENPC.McNeel.Grasshopper.Types.Geometry.Euclidean3D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ENPC.McNeel.Grasshopper.Types.Geometry.Euclidean3D.html",
+          "hash": "j3lvA1TgYp0Ak9b3WbFQmTKeHdG2TjIOprgEpP+XahI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "GHLfoou/6ypxA+2ToMdsY9aITGpxkFuYDPuLU16O/eA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "UidNotFound"
+      ],
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "jRs1u5PRT8dXWRPhAGf8mxaw6uEkCjVD7fnls52jXiM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "exp9E5W/Ntzezla6D7R5rP3xANSkkaMN9VUBT3J+CRM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo_enpc.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo_enpc.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "oCnUR8edgwlMU8NZzoSr93Slgsu0QcsniTe6h+WGjTE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "+YuIQ83Snsai4h5QL3ve7x+2a60XO6VLguDme0CBWbA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 4,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 6,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
