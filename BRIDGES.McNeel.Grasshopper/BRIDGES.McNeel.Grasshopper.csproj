@@ -18,9 +18,9 @@
 	<PackageId>BRIDGES.McNeel</PackageId>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
-  
+
   <ItemGroup>
-	  <ProjectReference Include="..\BRIDGES.McNeel.RhinoCommon\BRIDGES.McNeel.RhinoCommon.csproj" PrivateAssets="All"/>
+	  <ProjectReference Include="..\BRIDGES.McNeel.RhinoCommon\BRIDGES.McNeel.RhinoCommon.csproj" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,7 +28,27 @@
   </ItemGroup>
 
 
-  <!-- To add reference project in the NuGet package -->
+  <!-- To replace the .dll by the .gha in post-build -->
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+	<Exec Command="Copy &quot;$(TargetPath)&quot; &quot;$(TargetDir)$(ProjectName).gha&quot;&#xD;&#xA; Erase &quot;$(TargetPath)&quot;&#xD;&#xA;" />
+  </Target>
+
+  <!-- To add embedded resources -->
+  <ItemGroup>
+	<EmbeddedResource Include="Resources\Geometry\Euclidean3D\Param_Circle.png" />
+	<EmbeddedResource Include="Resources\Geometry\Euclidean3D\Param_Frame.png" />
+	<EmbeddedResource Include="Resources\Geometry\Euclidean3D\Param_Line.png" />
+	<EmbeddedResource Include="Resources\Geometry\Euclidean3D\Param_Plane.png" />
+	<EmbeddedResource Include="Resources\Geometry\Euclidean3D\Param_Point.png" />
+	<EmbeddedResource Include="Resources\Geometry\Euclidean3D\Param_Polyline.png" />
+	<EmbeddedResource Include="Resources\Geometry\Euclidean3D\Param_Ray.png" />
+	<EmbeddedResource Include="Resources\Geometry\Euclidean3D\Param_Segment.png" />
+	<EmbeddedResource Include="Resources\Geometry\Euclidean3D\Param_Sphere.png" />
+	<EmbeddedResource Include="Resources\Geometry\Euclidean3D\Param_Vector.png" />
+  </ItemGroup>
+
+
+	<!-- To add reference project in the NuGet package -->
   <PropertyGroup>
 	<TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
   </PropertyGroup>
@@ -36,7 +56,7 @@
   <Target Name="CopyProjectReferencesToPackage" DependsOnTargets="BuildOnlySettings;ResolveReferences">
 	<ItemGroup>
 	  <!-- Filter out unnecessary files -->
-	  <_ReferenceCopyLocalPaths Include="@(ReferenceCopyLocalPaths->WithMetadataValue('ReferenceSourceTarget', 'ProjectReference')->WithMetadataValue('PrivateAssets', 'All'))"/>
+	  <_ReferenceCopyLocalPaths Include="@(ReferenceCopyLocalPaths-&gt;WithMetadataValue('ReferenceSourceTarget', 'ProjectReference')-&gt;WithMetadataValue('PrivateAssets', 'All'))" />
 	</ItemGroup>
 	  
 	<!-- Print batches for debug purposes -->
@@ -44,7 +64,7 @@
 
 	<ItemGroup>
 	  <!-- Add file to package with consideration of sub folder. If empty, the root folder is chosen. -->
-	  <BuildOutputInPackage Include="@(_ReferenceCopyLocalPaths)" TargetPath="%(_ReferenceCopyLocalPaths.DestinationSubDirectory)"/>
+	  <BuildOutputInPackage Include="@(_ReferenceCopyLocalPaths)" TargetPath="%(_ReferenceCopyLocalPaths.DestinationSubDirectory)" />
 	</ItemGroup>
   </Target>
 

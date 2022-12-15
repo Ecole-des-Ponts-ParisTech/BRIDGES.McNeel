@@ -18,7 +18,7 @@
 
 
   <ItemGroup>
-    <PackageReference Include="BRIDGES" Version="0.1.1-beta" />
+    <PackageReference Include="BRIDGES" Version="0.1.2-beta" />
     <PackageReference Include="RhinoCommon" Version="7.21.22208.13001" />
   </ItemGroup>
 
